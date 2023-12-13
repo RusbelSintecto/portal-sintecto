@@ -218,7 +218,7 @@ if($pendientes<0){
 ?>
 
 <?php //if(Yii::app()->user->name=='nhenao@sintecto.com'):?>
-<h1>Resultados Funcionari@: D <?php echo Yii::app()->user->arUser->name ?> (<?php echo Yii::app()->user->name ?>)</h1>
+<h1>Resultados Funcionari@: <?php echo Yii::app()->user->arUser->name ?> (<?php echo Yii::app()->user->name ?>)</h1>
 <fieldset>
     <html>
         <head>
