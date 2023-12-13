@@ -1,0 +1,12 @@
+html/sesold/protected/config/*
+html/sesold/protected/runtime/*
+html/sesold/assets/*
+html/svpold/protected/config/*
+html/svpold/protected/runtime/*
+html/svpold/assets/*
+html/svpold/files/fileName/*
+html/yii1
+html/yiifw/*
+conf/*
+.vscode
+config/*
