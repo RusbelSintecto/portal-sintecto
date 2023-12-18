@@ -54,11 +54,10 @@ body
 
 #mainmenu
 {
-    background: #14457F;
     display: flex;
+    background: blueviolet;
     width: 100%;
-    margin-bottom: 12px;
-}
+    margin-bottom: 12px;}
 
 #mainmenu ul
 {
@@ -237,7 +236,7 @@ div.search-form
 }
 
 div.SvpTable th{
-    background:white url(bg.png) repeat-x left top;
+    background: blue;
     color: white;
     font-weight: bold;
     text-align: center;

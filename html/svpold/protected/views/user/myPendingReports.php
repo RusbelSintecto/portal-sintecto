@@ -466,6 +466,8 @@ if($pendientes<0){
 
 <h1>Reportes pendientes de  : <?php echo Yii::app()->user->arUser->name ?> (<?php echo Yii::app()->user->name ?>)</h1>
 
+<h2><?php echo Yii::app()->user->arUser->id ?> </h2>
+
 <div class="SvpTable" >
     <table>
         <tr>

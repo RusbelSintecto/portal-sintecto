@@ -58,7 +58,7 @@ class ETinyMce extends CInputWidget {
      *
      * @var string
      */
-    private $language = 'en';
+    private $language = 'es';
 
     /**
      * You can use one of these predefined setups for the editor:
@@ -99,7 +99,7 @@ class ETinyMce extends CInputWidget {
     /**
      * The TinyMCE options. It is an associative array. Follow this example:
      *
-     * $options['theme_advanced_toolbar_location'] = 'top';
+     * $options['theme_advanced_toolbar_location'] = 'buttom';
      *
      * The keys and the corresponding values are the configuration options from
      * this page:

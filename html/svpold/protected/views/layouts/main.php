@@ -33,18 +33,21 @@
         <div class="container" id="page">
 
             <div id="header">
-                <div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?>
+
+            <div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?>
                     <?php if (Yii::app()->params['serverType'] != "online") : ?>
                         <span id="logoServer">&nbsp; ** <?= strtoupper(Yii::app()->params['serverType']); ?> **</span>
                     <?php endif; ?>
                 </div>
             </div><!-- header -->
 
+
             <div id="mainmenu">
                 <?php
                 $this->widget('ext.cssmenu.CssMenu', AppMenu::getMenu());
                 ?>                
             </div><!-- mainmenu -->
+
             <?php if (isset($this->breadcrumbs)): ?>
                 <?php
                 $this->widget('zii.widgets.CBreadcrumbs', array(

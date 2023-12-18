@@ -94,7 +94,7 @@ class Controller extends CController {
                     'document', 'sectionTypeQuestion', 'activityType', 'event', 'contact',
                     'customerGroup', 'invoice', 'detailCompany',
                     'detailShareholder', 'product','pdfReportType','verificationSectionGroup','serviceResponse', 'attachmentFile', 'sendmassivecont', 'updateRegOFAC', 'sendResult','testAPI', 'qualityPorc', 'surveyLink', 'requestsSAC', 'candidateCalls', 'visitInvoiceDate', 'invoiceVisitCost', 'invoiceVisit', 'invoiceVisitDetail', 'notAssignmassive', 'userSenior', 'seniorAssignment', 'assignSeniorExport', 'miPlanilla','dynamicFormJSON','sendMassiveRecover','updateValiduntilFDRecover', 'sendmassiveRecover', 'studyStart', 'svpFile', 'fileAttachment',
-                    'detailFinancial', 'agreements'
+                    'detailFinancial', 'agreements' , 'PQR'
                 ),
             ),
             array('deny', // deny all users
@@ -320,7 +320,7 @@ class Controller extends CController {
     //Array con tipo de areas
     //Natalia Henao 06/04/2022
     static public $areatype = array (
-        0 => '-',
+        '' => '-',
         1 => 'Gerencia',
         2 => 'Gestion Humana',
         3 => 'Tecnología e Infraestructura',
@@ -331,6 +331,33 @@ class Controller extends CController {
         8 => 'Calidad',
         9 => 'Servicios Compartidos',
     );
+
+    //Array de tipo de PQR
+    //Rusbel 16/12/2023
+    static public $typePQR = array (
+        '' => '-',
+        1 => 'Ayuda',
+        2 => 'Solicitar cambio',
+        3 => 'Reportar error',
+        4 => 'Asistencia',
+        5 => 'Proponer mejora',
+    );
+
+
+    static public $statusPQR = array (
+        '' => '-',
+        1 =>'Aceptado',
+        2 =>'Solucionado',
+        3 =>'Rechazado',
+        4 =>'En Desarrollo',
+        5 =>'Concluido',
+        6 =>'En Espera'
+    );
+
+
+
+
+
 
     /**
     * Return data to browser as JSON and end application.
@@ -440,4 +467,7 @@ class Controller extends CController {
 
         }
     }
+
+
+
 }
