@@ -398,7 +398,7 @@ class AppMenu
                         'items' => array(
                             array('label' => 'Ayuda', 'url' => array('/site/help'), 'visible' => Yii::app()->user->isValidUser),
                             array('label' => 'Instructivos', 'url' => array('/site/instructive'), 'visible' => Yii::app()->user->isValidUser),
-                            array('label' => 'PQR', 'url' => array('PQR/index'), 'visible' => Yii::app()->user->isValidUser),
+                            array('label' => 'PQR', 'url' => array('PQR/admin'), 'visible' => Yii::app()->user->isValidUser),
                         )
                     ),
                 ),
