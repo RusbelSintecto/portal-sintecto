@@ -93,7 +93,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 			'viewButtonUrl' => 'Yii::app()->createUrl("PQR/view/", array("id"=>$data->id, "clearFilter" => 1))',
 			'buttons' => array(
                 'update' => array(
-                    'visible' => '$data->userCreate->name==Yii::app()->user->arUser->name' ,
+                    'visible' => '$data->idUserCreate==Yii::app()->user->arUser->id' ,
 					'options'=>array( 'class'=>'icon-search' ),
 				
                 ),
@@ -101,7 +101,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
                     'label' => '<i class="fa fa-pencil-square-o "></i>',
                     'url' => 'Yii::app()->createUrl("PQR/response", array("id"=>$data->id))',
 					'options' => array('title' => 'Responder Peticion PQR'),
-					'visible' => '$data->userCreate->name!==Yii::app()->user->arUser->name',
+					'visible' => '$data->idUserCreate!==Yii::app()->user->arUser->id',
                 ),
             ),
 		),
